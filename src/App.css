@@ -25,13 +25,13 @@ body {
 
 .hero-title {
   color: rgba(250, 250, 250, 0.6);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .image {
   height: 300px;
-  margin: 20px;
+  margin: 24px;
   object-fit: cover;
   border-radius: 20px;
   border: 1px solid #caf0f8;
@@ -46,8 +46,8 @@ body {
 
 .projects-title {
   color: rgba(5, 5, 5, 0.8);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   text-align: center;
 }
 
@@ -94,10 +94,6 @@ body {
 
 .nav-link.active {
   color: #ec4899;
-}
-
-.contact-icon__mail {
-  width: 30px;
 }
 
 .name-input {
@@ -166,3 +162,34 @@ body {
 /* .contact-section {
   text-align: center;
 } */
+
+.contact-icon {
+  width: 30px;
+}
+
+.contact-icon_svg-mail {
+  stroke: #24a1de;
+}
+
+.contact-icon_svg-tg {
+  fill: #24a1de;
+}
+
+.contact-icon_svg-gh {
+  fill: #24a1de;
+}
+
+.footer-section {
+  padding: 24px;
+  background-color: rgba(199, 199, 199, 0.6);
+}
+
+.copyright {
+  margin: 8px auto;
+  text-align: center;
+}
+
+.footer-contacts {
+  display: grid;
+  justify-content: end;
+}
