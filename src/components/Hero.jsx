@@ -9,7 +9,7 @@ const Hero = () => {
       </div>
       <div>
         <img
-          src="src/front-end-dev-photo.jpg"
+          src="src/assets/front-end-dev-photo.jpg"
           alt="Oleksandr Dzyhanskyi"
           className="image"
         />

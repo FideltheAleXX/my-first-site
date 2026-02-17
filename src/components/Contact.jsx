@@ -33,7 +33,7 @@ const Contact = () => {
             required
           ></textarea>
         </div>
-        <div>
+        <div className="btn-container">
           <button type="submit" className="submit-button">
             Send Message
           </button>
