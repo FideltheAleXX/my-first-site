@@ -8,6 +8,8 @@ const Projects = () => {
           Showcasing some of my work that demonstrates my skills.
         </p>
       </div>
+      <div className="biathlon-proj">Biathlon com ua Calendar</div>
+      <div className="mpplayer">MP3-player</div>
     </section>
   );
 };

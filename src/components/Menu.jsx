@@ -28,8 +28,8 @@ const Menu = () => {
         </div>
 
         <div className="nav-link active">
-          <a href="#achievements" className="menu-link">
-            Achievements
+          <a href="#skills" className="menu-link">
+            Skills
           </a>
         </div>
 
