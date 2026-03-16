@@ -8,16 +8,15 @@ import './index.css';
 import './App.css';
 
 function App() {
-  const newLocal = <Hero />;
   return (
-    <>
+    <div className="container">
       <Menu />
       <Hero />
       <Skills />
       <Projects />
       <Contact />
       <Footer />
-    </>
+    </div>
   );
 }
 
