@@ -1,6 +1,20 @@
 import { motion } from 'framer-motion';
 
 const Skills = () => {
+  const skills = [
+    { img: '/src/assets/html.png', name: 'HTML' },
+    { img: '/src/assets/css.png', name: 'CSS' },
+    { img: '/src/assets/javascript.png', name: 'JavaScript' },
+    { img: '/src/assets/react.png', name: 'React' },
+    { img: '/src/assets/typescript.png', name: 'TypeScript' },
+    { img: '/src/assets/nodejs.png', name: 'Node.js' },
+    { img: '/src/assets/npm.png', name: 'npm' },
+    { img: '/src/assets/expressjs.png', name: 'Express' },
+    { img: '/src/assets/docker.png', name: 'Docker' },
+    { img: '/src/assets/github.png', name: 'Git/GitHub' },
+    { img: '/src/assets/postgresql.png', name: 'postgreSQL' },
+    { img: '/src/assets/aws.svg', name: 'AWS' },
+  ];
   return (
     <motion.section
       id="skills"
@@ -13,90 +27,16 @@ const Skills = () => {
       <div className="skills-title">
         <h2>Skills</h2>
       </div>
+
       <div class="skills-list">
-        <div class="skill-item">
-          <img class="skill-image" alt="HTML logo" src="/src/assets/html.png" />
-          <p>HTML</p>
-        </div>
-        <div class="skill-item">
-          <img class="skill-image" alt="CSS logo" src="/src/assets/css.png" />
-          <p>CSS</p>
-        </div>
-
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="JavaScript logo"
-            src="/src/assets/javascript.png"
-          />
-          <p>JavaScript</p>
-        </div>
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="React logo"
-            src="/src/assets/react.png"
-          />
-          <p>React</p>
-        </div>
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="TypeScript logo"
-            src="/src/assets/typescript.png"
-          />
-          <p>TypeScript</p>
-        </div>
-
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="Node.js logo"
-            src="/src/assets/nodejs.png"
-          />
-          <p>Node.js</p>
-        </div>
-        <div class="skill-item">
-          <img class="skill-image" alt="npm logo" src="/src/assets/npm.png" />
-          <p>npm</p>
-        </div>
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="Express.js logo"
-            src="/src/assets/expressjs.png"
-          />
-          <p>Express.js</p>
-        </div>
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="Docker logo"
-            src="/src/assets/docker.png"
-          />
-          <p>Docker</p>
-        </div>
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="Git/GitHub logo"
-            src="/src/assets/github.png"
-          />
-          <p>Git/GitHub</p>
-        </div>
-        <div class="skill-item">
-          <img
-            class="skill-image"
-            alt="postgreSQL logo"
-            src="/src/assets/postgresql.png"
-          />
-          <p>postgreSQL</p>
-        </div>
-
-        <div class="skill-item">
-          <img class="skill-image" alt="AWS logo" src="/src/assets/aws.svg" />
-          <p>AWS</p>
-        </div>
+        {skills.map((skill, index) => {
+          return (
+            <div key={index} className="skill-item">
+              <img className="skill-image" src={skill.img} alt="skill logo" />
+              <p className="skill-title">{skill.name}</p>
+            </div>
+          );
+        })}
       </div>
     </motion.section>
   );
