@@ -1,6 +1,14 @@
+import { motion } from 'framer-motion';
+
 const Footer = () => {
   return (
-    <footer className="footer-section">
+    <motion.footer
+      className="footer-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="footer-contacts">
         <div className="contact-icon">
           <a
@@ -62,7 +70,7 @@ const Footer = () => {
         <script>document.write(new Date().getFullYear());</script>
         Oleksandr Dzygansky. All rights reserved.
       </p>
-    </footer>
+    </motion.footer>
   );
 };
 

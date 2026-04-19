@@ -1,6 +1,15 @@
+import { motion } from 'framer-motion';
+
 const Skills = () => {
   return (
-    <section id="skills" className="skills-section">
+    <motion.section
+      id="skills"
+      className="skills-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="skills-title">
         <h2>Skills</h2>
       </div>
@@ -89,7 +98,7 @@ const Skills = () => {
           <p>AWS</p>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,6 +1,15 @@
+import { motion } from 'framer-motion';
+
 const Hero = () => {
   return (
-    <section id="about" className="hero-section">
+    <motion.section
+      id="about"
+      className="hero-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div>
         <h1 className="hero-title">Hello, I'm Oleksandr Dzygansky</h1>
         <p>Front-end Developer</p>
@@ -14,7 +23,7 @@ const Hero = () => {
           className="image"
         />
       </div>
-    </section>
+    </motion.section>
   );
 };
 

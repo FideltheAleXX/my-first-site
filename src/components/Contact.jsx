@@ -1,6 +1,15 @@
+import { motion } from 'framer-motion';
+
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
+    <motion.section
+      id="contact"
+      className="contact-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="contact-title">
         <h2>Get In Touch</h2>
       </div>
@@ -39,7 +48,7 @@ const Contact = () => {
           </button>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
