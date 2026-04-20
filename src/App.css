@@ -60,6 +60,10 @@ body {
   color: #ec4899;
 }
 
+.menu-link {
+  text-decoration: none;
+}
+
 .hamburger {
   display: none;
   background: none;
@@ -182,10 +186,11 @@ body {
 }
 
 .works {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
 
 .project {
@@ -205,9 +210,19 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 12px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-descr {
+  padding-top: 8px;
   font-weight: 500;
   font-style: italic;
 }
