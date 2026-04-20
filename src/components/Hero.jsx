@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import frontDevImg from '../assets/front-end-dev-photo.jpg';
 
 const Hero = () => {
   return (
@@ -17,11 +18,7 @@ const Hero = () => {
         <p>with a focus on user-centered design and accessibility.</p>
       </div>
       <div>
-        <img
-          src="src/assets/front-end-dev-photo.jpg"
-          alt="Oleksandr Dzygansky"
-          className="image"
-        />
+        <img src={frontDevImg} alt="Oleksandr Dzygansky" className="image" />
       </div>
     </motion.section>
   );

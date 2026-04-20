@@ -1,19 +1,31 @@
 import { motion } from 'framer-motion';
+import htmlImg from '../assets/html.png';
+import cssImg from '../assets/css.png';
+import javascriptImg from '../assets/javascript.png';
+import reactImg from '../assets/react.png';
+import typescriptImg from '../assets/typescript.png';
+import nodejsImg from '../assets/nodejs.png';
+import npmImg from '../assets/npm.png';
+import expressImg from '../assets/expressjs.png';
+import dockerImg from '../assets/docker.png';
+import githubImg from '../assets/github.png';
+import postgreImg from '../assets/postgresql.pn';
+import awsImg from '../assets/aws.svg';
 
 const Skills = () => {
   const skills = [
-    { img: '/src/assets/html.png', name: 'HTML' },
-    { img: '/src/assets/css.png', name: 'CSS' },
-    { img: '/src/assets/javascript.png', name: 'JavaScript' },
-    { img: '/src/assets/react.png', name: 'React' },
-    { img: '/src/assets/typescript.png', name: 'TypeScript' },
-    { img: '/src/assets/nodejs.png', name: 'Node.js' },
-    { img: '/src/assets/npm.png', name: 'npm' },
-    { img: '/src/assets/expressjs.png', name: 'Express' },
-    { img: '/src/assets/docker.png', name: 'Docker' },
-    { img: '/src/assets/github.png', name: 'Git/GitHub' },
-    { img: '/src/assets/postgresql.png', name: 'postgreSQL' },
-    { img: '/src/assets/aws.svg', name: 'AWS' },
+    { img: htmlImg, name: 'HTML' },
+    { img: cssImg, name: 'CSS' },
+    { img: javascriptImg, name: 'JavaScript' },
+    { img: reactImg, name: 'React' },
+    { img: typescriptImg, name: 'TypeScript' },
+    { img: nodejsImg, name: 'Node.js' },
+    { img: npmImg, name: 'npm' },
+    { img: expressImg, name: 'Express' },
+    { img: dockerImg, name: 'Docker' },
+    { img: githubImg, name: 'Git/GitHub' },
+    { img: postgreImg, name: 'postgreSQL' },
+    { img: awsImg, name: 'AWS' },
   ];
   return (
     <motion.section
