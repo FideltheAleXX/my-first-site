@@ -9,7 +9,7 @@ import npmImg from '../assets/npm.png';
 import expressImg from '../assets/expressjs.png';
 import dockerImg from '../assets/docker.png';
 import githubImg from '../assets/github.png';
-import postgreImg from '../assets/postgresql.pn';
+import postgreImg from '../assets/postgresql.png';
 import awsImg from '../assets/aws.svg';
 
 const Skills = () => {

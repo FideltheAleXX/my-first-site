@@ -3,7 +3,8 @@ import analogClock from '../assets/analog-clock-proj.png';
 import converter from '../assets/converter-proj.png';
 import generator from '../assets/generator-proj.png';
 import countdown from '../assets/countdown-proj.png';
-import reactImg from '../assets/react.png';
+import cosmetologist from '../assets/cosmetologist-proj.png';
+import pflImg from '../assets/pfl-proj.png';
 
 const Projects = () => {
   const works = [
@@ -37,15 +38,17 @@ const Projects = () => {
     },
     {
       title: 'Landing-page for cosmetologist',
-      img: reactImg,
+      img: cosmetologist,
       url: 'https://github.com/FideltheAleXX/landing-cosmetolog',
-      description: 'Landing page for cosmetologist.',
+      description:
+        'An interactive, high-converting page with custom JavaScript features and modern UI/UX design.',
     },
     {
-      title: 'React mp-3 Player',
-      img: reactImg,
-      url: 'https://github.com/FideltheAleXX/mp3-player-react',
-      description: 'MP3 player use React JS.',
+      title: 'PFL UA start page clone',
+      img: pflImg,
+      url: 'https://fidelthealexx.github.io/pfl-start-page/',
+      description:
+        'Migrated the pfl.ua homepage to React, delivering a high-performance, fully responsive web experience.',
     },
   ];
   return (

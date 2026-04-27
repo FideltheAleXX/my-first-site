@@ -15,7 +15,11 @@ const Hero = () => {
         <h1 className="hero-title">Hello, I'm Oleksandr Dzygansky</h1>
         <p>Front-end Developer</p>
         <p>I like to create beautiful and functional SPA</p>
-        <p>with a focus on user-centered design and accessibility.</p>
+        <p>with a focus on user-centered design and accessibility,</p>
+        <p>
+          leveraging modern React patterns to deliver fast, inclusive, and
+          scalable web solutions.
+        </p>
       </div>
       <div>
         <img src={frontDevImg} alt="Oleksandr Dzygansky" className="image" />
