@@ -5,6 +5,7 @@ import generator from '../assets/generator-proj.png';
 import countdown from '../assets/countdown-proj.png';
 import cosmetologist from '../assets/cosmetologist-proj.png';
 import pflImg from '../assets/pfl-proj.png';
+import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   const works = [
@@ -37,7 +38,7 @@ const Projects = () => {
         'A real-time JavaScript countdown clock designed to holiday events with automatic interval management.',
     },
     {
-      title: 'Landing-page for cosmetologist',
+      title: 'Landing for cosmetologist',
       img: cosmetologist,
       url: 'https://github.com/FideltheAleXX/landing-cosmetolog',
       description:
@@ -64,21 +65,9 @@ const Projects = () => {
         <h2 className="projects-title">My Projects</h2>
       </div>
       <div className="works">
-        {works.map((work, index) => {
-          return (
-            <div key={index} className="project">
-              <p className="project-title">{work.title}</p>
-              <a href={work.url}>
-                <img
-                  className="project-img"
-                  src={work.img}
-                  alt="project preview"
-                />
-              </a>
-              <div className="project-descr">{work.description}</div>
-            </div>
-          );
-        })}
+        {works.map((work, index) => (
+          <ProjectCard key={index} project={work} />
+        ))}
       </div>
     </motion.section>
   );
