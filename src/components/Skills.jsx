@@ -40,7 +40,7 @@ const Skills = () => {
         <h2>Skills</h2>
       </div>
 
-      <div class="skills-list">
+      <div className="skills-list">
         {skills.map((skill, index) => {
           return (
             <div key={index} className="skill-item">

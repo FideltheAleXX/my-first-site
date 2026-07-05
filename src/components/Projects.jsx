@@ -1,41 +1,21 @@
 import { motion } from 'framer-motion';
-import analogClock from '../assets/analog-clock-proj.png';
 import converter from '../assets/converter-proj.png';
 import generator from '../assets/generator-proj.png';
 import countdown from '../assets/countdown-proj.png';
 import cosmetologist from '../assets/cosmetologist-proj.png';
 import pflImg from '../assets/pfl-proj.png';
+import clannZu from '../assets/clann-zu-proj.png';
+import localCafe from '../assets/local-cafe-proj.png';
 import ProjectCard from './ProjectCard';
 
 const Projects = () => {
   const works = [
     {
-      title: 'Currency Converter',
-      img: converter,
-      url: 'https://fidelthealexx.github.io/currency-converte-js/',
+      title: 'Clann Zu fan web-site',
+      img: clannZu,
+      url: 'https://clann-zu.com/',
       description:
-        'A JavaScript-based currency converter demonstrating real-time exchange rate calculations, API integration, and dynamic DOM updates.',
-    },
-    {
-      title: 'Analog Clock JS',
-      img: analogClock,
-      url: 'https://codepen.io/editor/FideltheAleXX/pen/019da4a0-1f8f-7f6c-9db3-f6d66f0190bd',
-      description:
-        'A JavaScript-based analog clock demonstrating real-time rendering, DOM updates, and CSS transform usage.',
-    },
-    {
-      title: 'Generator the Passwords',
-      img: generator,
-      url: 'https://fidelthealexx.github.io/generatoe-the-passwords/',
-      description:
-        'A lightweight JavaScript web application for generating strong, randomized passwords with customizable length and character types.',
-    },
-    {
-      title: 'Countdown',
-      img: countdown,
-      url: 'https://fidelthealexx.github.io/new-year-countdown/',
-      description:
-        'A real-time JavaScript countdown clock designed to holiday events with automatic interval management.',
+        'A fan-site for Clann Zu band with React-frontend part and NodeJS/Express-backend part.',
     },
     {
       title: 'Landing for cosmetologist',
@@ -50,6 +30,27 @@ const Projects = () => {
       url: 'https://fidelthealexx.github.io/pfl-start-page/',
       description:
         'Migrated the pfl.ua homepage to React, delivering a high-performance, fully responsive web experience.',
+    },
+    {
+      title: 'Local cafe site',
+      img: localCafe,
+      url: 'https://djan-cafe-next.vercel.app/',
+      description:
+        'A fully responsive website on Next JS for a local café, featuring a dynamic menu catalog and an online gift-card create system.',
+    },
+    {
+      title: 'Currency Converter',
+      img: converter,
+      url: 'https://fidelthealexx.github.io/currency-converte-js/',
+      description:
+        'A JavaScript-based currency converter demonstrating real-time exchange rate calculations, API integration, and dynamic DOM updates.',
+    },
+    {
+      title: 'Generator the Passwords',
+      img: generator,
+      url: 'https://fidelthealexx.github.io/generatoe-the-passwords/',
+      description:
+        'A lightweight JavaScript web application for generating strong, randomized passwords with customizable length and character types.',
     },
   ];
   return (
