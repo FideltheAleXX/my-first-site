@@ -4,3 +4,26 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --bg-card: #1b1816;
+  --bg-main: #0b0908;
+  --footer: #000000;
+  --text-main: #cdcdcd;
+  --btn-color: #2f1b05;
+  --btn-text-color: #d2ccc7;
+
+  --hover-clr: #ff8f00;
+  --hover-clr-text: #131616;
+  --accent-clr: #42aa00;
+  --accent-clr-text: #000000;
+
+  --info: #2563eb;
+  --info-text: #d2e2ff;
+  --success: #18a34a;
+  --success-text: #000a02;
+  --error: #d97708;
+  --error-text: #110500;
+
+  --br-main: 1rem;
+}

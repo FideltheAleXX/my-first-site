@@ -1,31 +1,31 @@
 import { motion } from 'framer-motion';
-import htmlImg from '../assets/html.png';
-import cssImg from '../assets/css.png';
 import javascriptImg from '../assets/javascript.png';
 import reactImg from '../assets/react.png';
+import nextImg from '../assets/nextjs.png';
 import typescriptImg from '../assets/typescript.png';
-import nodejsImg from '../assets/nodejs.png';
-import npmImg from '../assets/npm.png';
-import expressImg from '../assets/expressjs.png';
+import nodejsImg from '../assets/nodejs-logo.png';
+import expressImg from '../assets/expressjs-logo.png';
 import dockerImg from '../assets/docker.png';
 import githubImg from '../assets/github.png';
-import postgreImg from '../assets/postgresql.png';
-import awsImg from '../assets/aws.svg';
+import postgreImg from '../assets/postgresql-logo.png';
+import nestImg from '../assets/nestjs-logo.png';
+import mongodbImg from '../assets/mongodb-logo.png';
+import prismaImg from '../assets/prisma-logo.png';
 
 const Skills = () => {
   const skills = [
-    { img: htmlImg, name: 'HTML' },
-    { img: cssImg, name: 'CSS' },
-    { img: javascriptImg, name: 'JavaScript' },
-    { img: reactImg, name: 'React' },
-    { img: typescriptImg, name: 'TypeScript' },
     { img: nodejsImg, name: 'Node.js' },
-    { img: npmImg, name: 'npm' },
-    { img: expressImg, name: 'Express' },
+    { img: expressImg, name: 'Express JS' },
+    { img: nestImg, name: 'Nest JS' },
+    { img: typescriptImg, name: 'TypeScript' },
+    { img: postgreImg, name: 'PostgreSQL' },
+    { img: mongodbImg, name: 'MongoDB' },
     { img: dockerImg, name: 'Docker' },
     { img: githubImg, name: 'Git/GitHub' },
-    { img: postgreImg, name: 'postgreSQL' },
-    { img: awsImg, name: 'AWS' },
+    { img: prismaImg, name: 'Prisma ORM' },
+    { img: javascriptImg, name: 'JavaScript' },
+    { img: reactImg, name: 'React' },
+    { img: nextImg, name: 'Nest JS' },
   ];
   return (
     <motion.section
